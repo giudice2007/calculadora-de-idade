@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <!-- Escudo do Palmeiras (oculto por padrão) -->
+        <img id="escudo" class="escudo" src="https://upload.wikimedia.org/wikipedia/commons/1/10/Palmeiras_logo.svg" alt="Escudo Palmeiras">
+
+        <h1>Calculadora de Idade</h1>
+        <p>Digite a sua data de nascimento</p>
+
+        <div class="input-group">
+            <label for="dia">Dia</label>
+            <input type="number" id="dia" placeholder="Ex: 15" min="1" max="31">
+        </div>
+
+        <div class="input-group">
+            <label for="mes">Mês</label>
+            <input type="number" id="mes" placeholder="Ex: 08" min="1" max="12">
+        </div>
+
+        <div class="input-group">
+            <label for="ano">Ano</label>
+            <input type="number" id="ano" placeholder="Ex: 2002" min="1900">
+        </div>
+
+        <button id="btnCalcular" onclick="calcularIdade()">Calcular</button>
+
+        <p id="resultado" class="resultado"></p>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
